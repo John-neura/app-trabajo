@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gestión de Actividades</title>
+  <style>
+    button {
+      margin: 0.5rem;
+      padding: 0.5rem 1rem;
+    }
+    div ul {
+      margin-top: 0.5rem;
+      padding-left: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="main">
+    <div class="main">
+      <h1>Tareas principales</h1>
+    </div>
+
+    <!-- Botones -->
+    <button id="btn-tareas">Horarios</button>
+    <button id="btn-dotacion">Dotación</button>
+    <button id="btn-vehiculos">Vehículos</button>
+    <button id="btn-planta">Planta</button>
+    <button id="btn-fallas">Fallas</button>
+
+    <!-- Lista de Tareas -->
+    <div id="lista-tareas" style="display: none;">
+        <ul>
+          <li class="color">
+              Horarios:
+              <ul>
+                <li>Entrada: 7 am</li>
+                <li>Primer descanso: 9 pm - salen dos personas</li>
+                <li>9:30 - regresan, salen otras 2 personas</li>
+                <li>10 am - todos adentro</li>
+                <li>Almuerzo: primeros 2 salen a las 12 pm</li>
+                <li>12:30 - segundo grupo</li>
+                <li>1:00 pm - primer grupo regresa</li>
+                <li>1:15 pm - segundo grupo regresa</li>
+                <li>para la planta 3pm limpieza</li>
+                <li>3:30 descanzan para baño</li>
+                <li>4: pm todos deben ya marcar salida</li>
+              </ul>
+            </li>
+            
+        </ul>
+      </div>
+    
+      <!-- Lista de dotación (inicialmente oculta) -->
+      <div id="lista-dotacion" style="display: none;">
+        <ul>
+          <li>Oberol de manga larga antifluido solo operacios, conductor y auxiliar</li>
+          <li>Delantal plastico todos deven usarlo </li>
+          <li>Botas todos deven usarlo</li>
+          <li>gorra todos deven usarlo</li>
+          <li>protector auditivos personal cerca a la maquina</li>
+          <li>repiradores personal cerca a la zona de holores operarios</li>
+
+        </ul>
+      </div>
+    </main>
+
+    <div id="lista-vehiculos" style="display: none;">
+      <ul>
+       <li>tener disponible siempre talonarios 5 por lo menos estar revisando esto</li>   
+       <li>estar pendiente de las rutas con cualquier novedad que surja</li>
+        <li>supervisar proceso de descargue no vayan haber dalos y pesar producto que no se procesaran se llama tercerizar </li>
+        <li>Verificar vehicolos en buenas condiciones</li>
+        <li>documentacion de bascula para gestores no para veiculos propios</li>
+        <li>revisar el kit de un veiculo listado dado por salud ocupacional</li>
+        <li>embalar y almacenar cumpliendo politicas de segregacion</li>
+        <li>lavado de vehiculos en tiempos muertos del conductor y auxiliar salen a 2:30 pm</li>
+
+
+        <li>protector auditivos personal cerca a la maquina</li>
+        <li>repiradores personal cerca a la zona de holores operarios</li>
+
+      </ul>
+    </div>
+  </main>
+    
+    
+
+    <!-- Lista de Planta -->
+    <div id="lista-planta" style="display: none;">
+      <ul>
+        <li>Limpieza en planta al finalizar el horario, media hora antes de que los operarios comiencen a desacalorarse.</li>
+        <li>Residuos separados: anatómicos aparte, cortopunzantes aparte y biohospitalarios aparte.</li>
+        <li>Latas de leche: botar el producto y desechar las latas directamente en el contenedor.</li>
+        <li>Residuos de farmacia: ir desechándolos poco a poco, dejarlos en una estiba e ir sacándolos en tiempos muertos cuando los operarios estén parados.</li>
+        <li>Todo debe quedar apagado y limpio al finalizar la jornada.</li>
+      </ul>
+    </div>
+
+    <!-- Lista de Fallas -->
+    <div id="lista-fallas" style="display: none;">
+      <ul>
+        <li>Tratar de resolver con los conocimientos o experiencia de los operarios dichos problemas. Tiempo máximo: 30 minutos.</li>
+        <li>Si no se puede resolver, avisar oportunamente al encargado del mantenimiento de la máquina.</li>
+      </ul>
+    </div>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
+
+      
+   <script src="index.js"></script> 
+</body>
+</html>
+
