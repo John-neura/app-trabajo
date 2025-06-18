@@ -1,14 +1,6 @@
 
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-   <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -33,20 +25,22 @@
 
     <!-- Botones -->
     <button id="btn-tareas">Horarios</button>
+    <button id="btn-tareas2">Horarios2</button>
     <button id="btn-dotacion">Dotación</button>
     <button id="btn-vehiculos">Vehículos</button>
     <button id="btn-planta">Planta</button>
     <button id="btn-fallas">Fallas</button>
+    <button id="btn-maquina">Maquina</button>
 
-    <!-- Lista de Tareas -->
+    <!-- Lista de Horario -->
     <div id="lista-tareas" style="display: none;">
         <ul>
           <li class="color">
               Horarios:
               <ul>
                 <li>Entrada: 7 am</li>
-                <li>Primer descanso: 9 pm - salen dos personas</li>
-                <li>9:30 - regresan, salen otras 2 personas</li>
+                <li>Primer descanso: 9 pm - salen dos personas 9:30 - regresan</li>
+                <li> 9:30 salen otras 2 personas entran a las 10 pm</li>
                 <li>10 am - todos adentro</li>
                 <li>Almuerzo: primeros 2 salen a las 12 pm</li>
                 <li>12:30 - segundo grupo</li>
@@ -57,12 +51,33 @@
                 <li>4: pm todos deben ya marcar salida</li>
               </ul>
             </li>
-            
         </ul>
       </div>
-    
-      <!-- Lista de dotación (inicialmente oculta) -->
-      <div id="lista-dotacion" style="display: none;">
+
+      <!-- Lista de Horario2 -->
+      <div id="lista-tareas2" style="display: none;">
+        <ul>
+          <li class="color">
+              Horarios2:
+              <ul>
+                <li>Entrada: 6 am</li>
+                <li>Primer descanso: 8 pm - salen dos personas- 8:30 regresan</li>
+                <li>8:30 salen otros dos - regresan a las 9pm</li>
+                <li>9 am - todos adentro</li>
+                <li>Almuerzo: primeros 2 salen a las 12 pm</li>
+                <li>12:30 - segundo grupo</li>
+                <li>1:00 pm - primer grupo regresa</li>
+                <li>1:15 pm - segundo grupo regresa</li>
+                <li>para la planta 2pm limpieza</li>
+                <li>2:30 descanzan para baño</li>
+                <li>3:00 pm todos deben ya marcar salida</li>
+              </ul>
+            </li>
+        </ul>
+      </div>
+
+    <!-- Lista de Dotación -->
+    <div id="lista-dotacion" style="display: none;">
         <ul>
           <li>Oberol de manga larga antifluido solo operacios, conductor y auxiliar</li>
           <li>Delantal plastico todos deven usarlo </li>
@@ -70,10 +85,8 @@
           <li>gorra todos deven usarlo</li>
           <li>protector auditivos personal cerca a la maquina</li>
           <li>repiradores personal cerca a la zona de holores operarios</li>
-
         </ul>
       </div>
-    </main>
 
     <div id="lista-vehiculos" style="display: none;">
       <ul>
@@ -85,16 +98,10 @@
         <li>revisar el kit de un veiculo listado dado por salud ocupacional</li>
         <li>embalar y almacenar cumpliendo politicas de segregacion</li>
         <li>lavado de vehiculos en tiempos muertos del conductor y auxiliar salen a 2:30 pm</li>
-
-
         <li>protector auditivos personal cerca a la maquina</li>
         <li>repiradores personal cerca a la zona de holores operarios</li>
-
       </ul>
     </div>
-  </main>
-    
-    
 
     <!-- Lista de Planta -->
     <div id="lista-planta" style="display: none;">
@@ -114,15 +121,17 @@
         <li>Si no se puede resolver, avisar oportunamente al encargado del mantenimiento de la máquina.</li>
       </ul>
     </div>
+
+    <!-- Lista de Maquina -->
+    <div id="lista-maquina" style="display: none;">
+      <ul>
+        <li>Aprender manejo de botones </li>
+        <li>Estar pendiente del ruido de la maquina</li>
+      </ul>
+    </div>
   </main>
 
   <!-- JavaScript -->
-  <script src="script.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
-
-      
-   <script src="index.js"></script> 
-</body>
-</html>
-
